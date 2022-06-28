@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Alpha Centauri Social Interaction Center (ACSIC)</title>
@@ -16,7 +19,8 @@
             <div class="header-top">
                 <div class="searchbar">
                     <div class="search-icon">MAG GLASS</div>
-                    <div class="search-bar">SEARCHBAR</div>
+                    <input class="search-field">
+                    </input>
                 </div>
                 <div class="settings">
                     <button class="notifications">BELL</button>
@@ -43,110 +47,125 @@
                 <div class="brand-logo-text">BRAND TEXT</div>
             </div>
             <div class="nav-links">
-                <div id="sidebar-home" class="sidebar-links">HOME</div>
-                <div id="sidebar-profile" class="sidebar-links">PROFILE</div>
-                <div id="sidebar-messages" class="sidebar-links">MESSAGES</div>
-                <div id="sidebar-history" class="sidebar-links">HISTORY</div>
-                <div id="sidebar-tasks" class="sidebar-links">TASKS</div>
-                <div id="sidebar-communities" class="sidebar-links">COMMUNITIES</div>
+                <button id="sidebar-home" class="sidebar-links">HOME</button>
+                <button id="sidebar-profile" class="sidebar-links">PROFILE</button>
+                <button id="sidebar-messages" class="sidebar-links">MESSAGES</button>
+                <button id="sidebar-history" class="sidebar-links">HISTORY</button>
+                <button id="sidebar-tasks" class="sidebar-links">TASKS</button>
+                <button id="sidebar-communities" class="sidebar-links">COMMUNITIES</button>
             </div>
             <div class="general-settings">
-                <div id="sidebar-settngs" class="sidebar-links">SETTINGS</div>
-                <div id="sidebar-support" class="sidebar-links">SUPPORT</div>
-                <div id="sidebar-privacy" class="sidebar-links">PRIVACY</div>
+                <button id="sidebar-settngs" class="sidebar-links">SETTINGS</button>
+                <button id="sidebar-support" class="sidebar-links">SUPPORT</button>
+                <button id="sidebar-privacy" class="sidebar-links">PRIVACY</button>
             </div>
         </div>
         <div class="main">
-            <div class="user-projects">
-                <div class="super-cool-project">
-                    <div class="project-title">TITLE GOES HERE</div>
-                    <div class="project-text">A BIT OF LOREM IP</div>
-                    <div class="project-links">
-                        <div class="project-star">STAR</div>
-                        <div class="quick-look">EYE</div>
-                        <div class="share-project">SHARE</div>
+            <div class="projects-container">
+                <h1>USER PROJECTS</h1>
+                <div class="user-projects">
+                    <div class="project">
+                        <div class="project-title">TITLE GOES HERE</div>
+                        <div class="project-text">A BIT OF LOREM IP</div>
+                        <div class="project-links">
+                            <div class="project-star">STAR</div>
+                            <div class="quick-look">EYE</div>
+                            <div class="share-project">SHARE</div>
+                        </div>
                     </div>
-                </div>
-                <div class="less-cool-project">
-                    <div class="project-title">TITLE GOES HERE</div>
-                    <div class="project-text">A BIT OF LOREM IP</div>
-                    <div class="project-links">
-                        <div class="project-star">STAR</div>
-                        <div class="quick-look">EYE</div>
-                        <div class="share-project">SHARE</div>
+                    <div class="project">
+                        <div class="project-title">TITLE GOES HERE</div>
+                        <div class="project-text">A BIT OF LOREM IP</div>
+                        <div class="project-links">
+                            <div class="project-star">STAR</div>
+                            <div class="quick-look">EYE</div>
+                            <div class="share-project">SHARE</div>
+                        </div>
                     </div>
-                </div>
-                <div class="impossible-app">
-                    <div class="project-title">TITLE GOES HERE</div>
-                    <div class="project-text">A BIT OF LOREM IP</div>
-                    <div class="project-links">
-                        <div class="project-star">STAR</div>
-                        <div class="quick-look">EYE</div>
-                        <div class="share-project">SHARE</div>
+                    <div class="project">
+                        <div class="project-title">TITLE GOES HERE</div>
+                        <div class="project-text">A BIT OF LOREM IP</div>
+                        <div class="project-links">
+                            <div class="project-star">STAR</div>
+                            <div class="quick-look">EYE</div>
+                            <div class="share-project">SHARE</div>
+                        </div>
                     </div>
-                </div>
-                <div class="easy-peasy-app">
-                    <div class="project-title">TITLE GOES HERE</div>
-                    <div class="project-text">A BIT OF LOREM IP</div>
-                    <div class="project-links">
-                        <div class="project-star">STAR</div>
-                        <div class="quick-look">EYE</div>
-                        <div class="share-project">SHARE</div>
+                    <div class="project">
+                        <div class="project-title">TITLE GOES HERE</div>
+                        <div class="project-text">A BIT OF LOREM IP</div>
+                        <div class="project-links">
+                            <div class="project-star">STAR</div>
+                            <div class="quick-look">EYE</div>
+                            <div class="share-project">SHARE</div>
+                        </div>
                     </div>
-                </div>
-                <div class="ad-blocker">
-                    <div class="project-title">TITLE GOES HERE</div>
-                    <div class="project-text">A BIT OF LOREM IP</div>
-                    <div class="project-links">
-                        <div class="project-star">STAR</div>
-                        <div class="quick-look">EYE</div>
-                        <div class="share-project">SHARE</div>
+                    <div class="project">
+                        <div class="project-title">TITLE GOES HERE</div>
+                        <div class="project-text">A BIT OF LOREM IP</div>
+                        <div class="project-links">
+                            <div class="project-star">STAR</div>
+                            <div class="quick-look">EYE</div>
+                            <div class="share-project">SHARE</div>
+                        </div>
                     </div>
-                </div>
-                <div class="money-maker">
-                    <div class="project-title">TITLE GOES HERE</div>
-                    <div class="project-text">A BIT OF LOREM IP</div>
-                    <div class="project-links">
-                        <div class="project-star">STAR</div>
-                        <div class="quick-look">EYE</div>
-                        <div class="share-project">SHARE</div>
+                    <div class="project">
+                        <div class="project-title">TITLE GOES HERE</div>
+                        <div class="project-text">A BIT OF LOREM IP</div>
+                        <div class="project-links">
+                            <div class="project-star">STAR</div>
+                            <div class="quick-look">EYE</div>
+                            <div class="share-project">SHARE</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="announcements">
-                <div id="maintenance" class="announcements-style">SITE MAINTENANCE</div>
-                <div id="community-share-day" class="announcements-style">COMMUNITY SHARE DAY</div>
-                <div id="updated-privacy-policy" class="announcements-style">UPDATED PRIVACY POLICY</div>
-            </div>
-            <div class="trending">
-                <div id="trending-one" class="trending-style">
-                    <div class="trending-pic">PIC</div>
-                    <div class="trending-user-info">
-                        <div class="trending-username">@WHAT</div>
-                        <div class="trending-userbio">BIO</div>
-                    </div>
+            <div class="announcements-container">
+                <div>
+                    <h1>ANNOUNCEMENTS</h1>
                 </div>
-                <div id="trending-two" class="trending-style">
-                    <div class="trending-pic">PIC</div>
-                    <div class="trending-user-info">
-                        <div class="trending-username">@WHAT</div>
-                        <div class="trending-userbio">BIO</div>
-                    </div>
-                    <div id="trending-three" class="trending-style">
-                        <div class="trending-pic">PIC</div>
+                <div class="announcements">
+                    <div id="maintenance" class="announcements-cell">SITE MAINTENANCE</div>
+                    <div id="community-share-day" class="announcements-cell">COMMUNITY SHARE DAY</div>
+                    <div id="updated-privacy-policy" class="announcements-cell">UPDATED PRIVACY POLICY</div>
+                </div>
+            </div>
+            <div class="trending-container">
+                <div>
+                    <h1>TRENDING</h1>
+                </div>
+                <div class="trending">
+                    <div id="trending-one" class="trending-cell">
+                        <div class="trending-pic">PIC1</div>
                         <div class="trending-user-info">
                             <div class="trending-username">@WHAT</div>
                             <div class="trending-userbio">BIO</div>
                         </div>
                     </div>
-                    <div id="trending-four" class="trending-style">
-                        <div class="trending-pic">PIC</div>
+                    <div id="trending-two" class="trending-cell">
+                        <div class="trending-pic">PIC2</div>
+                        <div class="trending-user-info">
+                            <div class="trending-username">@WHAT</div>
+                            <div class="trending-userbio">BIO</div>
+                        </div>
+                    </div>
+                    <div id="trending-three" class="trending-cell">
+                        <div class="trending-pic">PIC3</div>
+                        <div class="trending-user-info">
+                            <div class="trending-username">@WHAT</div>
+                            <div class="trending-userbio">BIO</div>
+                        </div>
+                    </div>
+                    <div id="trending-four" class="trending-cell">
+                        <div class="trending-pic">PIC4</div>
                         <div class="trending-user-info">
                             <div class="trending-username">@WHAT</div>
                             <div class="trending-userbio">BIO</div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 </body>
 
 </html>
