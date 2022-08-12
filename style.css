@@ -60,7 +60,6 @@ body {
   min-height: 20vh;
   width: auto;
   font-weight: bold;
-  box-shadow: 1px 1px #527572;
 }
 
 .header-top {
@@ -70,9 +69,7 @@ body {
 }
 
 .searchbar {
-  grid-area: searchbar;
-  display: grid;
-  grid-template-areas: "search-icon search-field";
+  display: flex;
 }
 
 .search-icon {
@@ -87,6 +84,7 @@ body {
 
 .search-field {
   grid-area: search-field;
+  width: 5vw;
   height: 1em;
   border-radius: 9px;
   border: 1px solid rgb(235, 235, 235);
@@ -179,10 +177,14 @@ body {
 }
 
 .logo-image {
+  margin: 0 0 0 5vw;
   grid-area: logo-image;
 }
 
 .brand-logo-text {
+  margin-top: 1.5vh;
+  font-weight: 500;
+  font-size: larger;
   grid-area: brand-logo-text;
 }
 
@@ -204,6 +206,7 @@ body {
 }
 
 .main {
+  padding-top: 7vh;
   grid-area: main;
   display: grid;
   grid-template-areas:
@@ -231,6 +234,15 @@ body {
   background-color: white;
   border-radius: 8px;
   text-align: center;
+}
+
+.project-title {
+  font-weight: 700;
+}
+
+.project-links {
+  display: flex;
+  margin: 1em;
 }
 
 .announcements-container {
