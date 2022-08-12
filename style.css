@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(173, 182, 191);
+  background-color: #bfdbfe;
   height: 100vh;
   width: 100vw;
   font-size: large;
@@ -20,7 +20,8 @@ body {
 }
 
 .button-style {
-  background-color: skyblue;
+  color: white;
+  background-color: #0284c7;
   font-size: large;
   font-weight: bold;
   border-radius: 90px;
@@ -30,7 +31,8 @@ body {
 }
 
 .sidebar-button {
-  background-color: skyblue;
+  color: white;
+  background-color: #0284c7;
   border: none;
   font-size: large;
   font-weight: bold;
@@ -151,7 +153,8 @@ body {
 }
 
 .sidebar {
-  background-color: skyblue;
+  color: white;
+  background-color: #0284c7;
   grid-area: sidebar;
   display: grid;
   grid-template-areas:
@@ -225,6 +228,7 @@ body {
 }
 
 .project {
+  background-color: white;
   border-radius: 8px;
   text-align: center;
 }
@@ -240,9 +244,10 @@ body {
 }
 
 .announcements-cell {
+  background-color: white;
   grid-area: announcement-cell;
   width: 150px;
-  border: 1px solid black;
+  border: none;
   border-radius: 8px;
   font-size: medium;
   margin-bottom: 2vh;
@@ -259,7 +264,8 @@ body {
 }
 
 .trending-cell {
-  border: 1px solid black;
+  background-color: white;
+  border: none;
   width: 150px;
   border-radius: 8px;
   font-size: medium;
