@@ -36,7 +36,7 @@ body {
   font-weight: bold;
   min-width: 100px;
   min-height: 20px;
-  margin-left: 5vw;
+  margin: 1vh 0 0 5vw;
 }
 
 .container {
@@ -115,6 +115,7 @@ body {
   height: 4vh;
   width: 4vh;
   border-radius: 90px;
+  border: none;
 }
 
 #userGreet {
@@ -149,6 +150,15 @@ body {
 
 .greeting {
   grid-area: greeting;
+  width: 20vw;
+}
+
+.saluations {
+  font-size: 1.5vh;
+}
+
+#userGreetTwo {
+  font-size: 3vh;
 }
 
 .user-create-content {
@@ -163,25 +173,16 @@ body {
   color: white;
   background-color: #0284c7;
   grid-area: sidebar;
-  display: grid;
-  grid-template-areas:
-    "brand-logo"
-    "nav-links"
-    "general-settings"
-    "."
-    "."
-    ".";
+  display: flex;
+  flex-direction: column;
   min-width: 250px;
-  align-items: center;
 }
 
 .brand-logo {
   grid-area: brand-logo;
-  display: grid;
-  grid-template-areas:
-    ". . ."
-    ". logo-image brand-logo-text"
-    ". . .";
+  display: flex;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
 }
 
 .logo-image {
@@ -201,6 +202,7 @@ body {
   width: 200px;
   display: grid;
   grid-template-columns: 1;
+  margin-bottom: 5vh;
 }
 
 .nav-links {
