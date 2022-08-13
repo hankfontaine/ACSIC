@@ -23,7 +23,8 @@ body {
   background-color: #0284c7;
   border-radius: 90px;
   border: none;
-  min-width: 70px;
+  width: 70px;
+  height: 2.5em;
 }
 
 .sidebar-button {
@@ -130,7 +131,7 @@ body {
 .header-main {
   margin-top: 3vh;
   display: grid;
-  grid-template-areas: "profile-pic greeting ... user-create-content";
+  grid-template-areas: "profile-pic greeting user-create-content";
 }
 
 .profile-pic {
@@ -150,6 +151,8 @@ body {
 }
 
 .user-create-content {
+  margin-left: 36vw;
+  margin-right: 4vw;
   grid-area: user-create-content;
 }
 
@@ -209,7 +212,6 @@ body {
 
 .main {
   margin-right: 3vw;
-  padding-top: 7vh;
   grid-area: main;
   display: grid;
   grid-template-areas:
