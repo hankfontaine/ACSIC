@@ -151,8 +151,10 @@ body {
 }
 
 .user-create-content {
-  margin-left: 36vw;
-  margin-right: 4vw;
+  width: 20vw;
+  margin-left: 30vw;
+  display: flex;
+  justify-content: space-between;
   grid-area: user-create-content;
 }
 
@@ -236,6 +238,7 @@ body {
 }
 
 .project {
+  padding: 10px;
   border-left: 4px solid goldenrod;
   width: 25vw;
   background-color: white;
@@ -264,22 +267,20 @@ body {
 }
 
 .announcements {
+  padding-top: 3px;
   border-radius: 8px;
   text-align: left;
   box-shadow: 1px 1px 1px gray;
   background-color: white;
   grid-template-columns: 3;
   grid-template-areas: "announcement-cell . . ";
+  height: 20vh;
 }
 
 .announcements-cell {
   background-color: white;
   grid-area: announcement-cell;
-  width: 150px;
-  border: none;
-  border-radius: 8px;
   font-size: medium;
-  margin-bottom: 1.5vh;
 }
 
 .trending-container {
@@ -299,9 +300,5 @@ body {
 
 .trending-cell {
   background-color: white;
-  border: none;
-  width: 150px;
-  border-radius: 8px;
   font-size: medium;
-  margin-bottom: 2vh;
 }
