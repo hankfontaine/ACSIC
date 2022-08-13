@@ -62,8 +62,10 @@ body {
 
 .header-top {
   padding-top: 4vh;
-  display: grid;
-  grid-template-areas: "searchbar . . . . settings";
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 5vw;
 }
 
 .searchbar {
@@ -83,13 +85,16 @@ body {
 .search-field {
   grid-area: search-field;
   width: 35vw;
-  height: 1em;
+  height: 1.5em;
   border-radius: 9px;
   border: 1px solid rgb(235, 235, 235);
   background-color: rgba(177, 169, 169, 0.535);
 }
 
 .settings {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   grid-area: settings;
 }
 
@@ -140,8 +145,8 @@ body {
   background: none;
   background-image: url(./SVGs-and-Images/profile-pic-small-copy.jpg);
   background-size: cover;
-  height: 4vh;
-  width: 4vh;
+  height: 4.5vh;
+  width: 4.5vh;
   border-radius: 90px;
 
   grid-area: profile-pic;
@@ -179,6 +184,8 @@ body {
 }
 
 .brand-logo {
+  /* font-size: 2.5vh; */
+  font-weight: bold;
   grid-area: brand-logo;
   display: flex;
   margin-top: 3vh;
@@ -192,8 +199,8 @@ body {
 
 .brand-logo-text {
   margin-top: 1.5vh;
-  font-weight: 500;
-  font-size: larger;
+  font-weight: 550;
+  font-size: 3.3vh;
   grid-area: brand-logo-text;
 }
 
