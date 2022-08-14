@@ -1,9 +1,43 @@
-const firstProject = document.getElementById("project-one");
-const secondProject = document.getElementById("project-two");
-const thirdProject = document.getElementById("project-three");
-const fourthProject = document.getElementById("project-four");
-const fifthProject = document.getElementById("project-five");
-const sixthProject = document.getElementById("project-six");
+const projectsContainer = document.getElementById("projects-container");
+projectsContainer.id = "projects-container";
+
+const userProjectsTitle = document.createElement("h4");
+userProjectsTitle.innerHTML = "User Projects";
+projectsContainer.appendChild(userProjectsTitle);
+
+const userProjects = document.createElement("div");
+userProjects.classList = "user-projects";
+projectsContainer.appendChild(userProjects);
+
+const firstProject = document.createElement("div");
+firstProject.classList = "project";
+firstProject.id = "project-one";
+userProjects.appendChild(firstProject);
+
+const secondProject = document.createElement("div");
+secondProject.classList = "project";
+secondProject.id = "project-two";
+userProjects.appendChild(secondProject);
+
+const thirdProject = document.createElement("div");
+thirdProject.classList = "project";
+thirdProject.id = "project-three";
+userProjects.appendChild(thirdProject);
+
+const fourthProject = document.createElement("div");
+fourthProject.classList = "project";
+fourthProject.id = "project-four";
+userProjects.appendChild(fourthProject);
+
+const fifthProject = document.createElement("div");
+fifthProject.classList = "project";
+fifthProject.id = "project-five";
+userProjects.appendChild(fifthProject);
+
+const sixthProject = document.createElement("div");
+sixthProject.classList = "project";
+sixthProject.id = "project-six";
+userProjects.appendChild(sixthProject);
 
 const firstProjectTitle = document.createElement("div");
 firstProjectTitle.classList = "project-title";
