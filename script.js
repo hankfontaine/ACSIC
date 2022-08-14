@@ -1,5 +1,8 @@
+///////////////////////////////////////////////////////////////////////////
+/////////////////BUILD PROJECTS CONTAINER /////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
 const projectsContainer = document.getElementById("projects-container");
-projectsContainer.id = "projects-container";
 
 const userProjectsTitle = document.createElement("h4");
 userProjectsTitle.innerHTML = "User Projects";
@@ -165,3 +168,36 @@ sixthProjectLinks.appendChild(sixthProjectEye);
 const sixthProjectShare = document.createElement("div");
 sixthProjectShare.innerHTML = "share";
 sixthProjectLinks.appendChild(sixthProjectShare);
+
+///////////////////////////////////////////////////////////////////////////
+///////////////BUILD ANNOUNCNEMENTS CONTAINER /////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+const announcementsContainer = document.getElementById(
+  "announcements-container"
+);
+const announcementsTitle = document.createElement("h4");
+announcementsTitle.innerHTML = "Announcements";
+announcementsContainer.appendChild(announcementsTitle);
+
+const announcementsBox = document.createElement("div");
+announcementsBox.classList = "announcements";
+announcementsContainer.appendChild(announcementsBox);
+
+const maintenanceDiv = document.createElement("div");
+maintenanceDiv.id = "maintenance";
+maintenanceDiv.classList = "announcements-cell";
+maintenanceDiv.innerHTML = "Site Maintenance";
+announcementsBox.appendChild(maintenanceDiv);
+
+const communityDiv = document.createElement("div");
+communityDiv.id = "community-share-day";
+communityDiv.classList = "announcements-cell";
+communityDiv.innerHTML = "Community Share Day";
+announcementsBox.appendChild(communityDiv);
+
+const privacyPolicyDiv = document.createElement("div");
+privacyPolicyDiv.id = "updated-privacy-policy";
+privacyPolicyDiv.classList = "announcements-cell";
+privacyPolicyDiv.innerHTML = "Updated Privacy Policy";
+announcementsBox.appendChild(privacyPolicyDiv);
