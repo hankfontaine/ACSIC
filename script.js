@@ -1,4 +1,9 @@
 const firstProject = document.getElementById("project-one");
+const secondProject = document.getElementById("project-two");
+const thirdProject = document.getElementById("project-three");
+const fourthProject = document.getElementById("project-four");
+const fifthProject = document.getElementById("project-five");
+const sixthProject = document.getElementById("project-six");
 
 const firstProjectTitle = document.createElement("div");
 firstProjectTitle.classList = "project-title";
@@ -21,3 +26,113 @@ firstProjectLinks.appendChild(firstProjectEye);
 const firstProjectShare = document.createElement("div");
 firstProjectShare.innerHTML = "share";
 firstProjectLinks.appendChild(firstProjectShare);
+
+const secondProjectTitle = document.createElement("div");
+secondProjectTitle.classList = "project-title";
+secondProjectTitle.innerHTML = "Less Cool Project";
+secondProject.appendChild(secondProjectTitle);
+const secondProjectText = document.createElement("div");
+secondProjectText.classList = "project-text";
+secondProjectText.innerHTML =
+  "Repellat neque sunt nulla eius, commodi consequatur ipsum quaerat beatae optio nemo autem ea unde.";
+secondProject.appendChild(secondProjectText);
+const secondProjectLinks = document.createElement("div");
+secondProjectLinks.classList = "project-links";
+secondProject.appendChild(secondProjectLinks);
+const secondProjectStar = document.createElement("div");
+secondProjectStar.innerHTML = "star";
+secondProjectLinks.appendChild(secondProjectStar);
+const secondProjectEye = document.createElement("div");
+secondProjectEye.innerHTML = "eye";
+secondProjectLinks.appendChild(secondProjectEye);
+const secondProjectShare = document.createElement("div");
+secondProjectShare.innerHTML = "share";
+secondProjectLinks.appendChild(secondProjectShare);
+
+const thirdProjectTitle = document.createElement("div");
+thirdProjectTitle.classList = "project-title";
+thirdProjectTitle.innerHTML = "Impossible App";
+thirdProject.appendChild(thirdProjectTitle);
+const thirdProjectText = document.createElement("div");
+thirdProjectText.classList = "project-text";
+thirdProjectText.innerHTML =
+  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nisi rem minima expedita, facilis ex?";
+thirdProject.appendChild(thirdProjectText);
+const thirdProjectLinks = document.createElement("div");
+thirdProjectLinks.classList = "project-links";
+thirdProject.appendChild(thirdProjectLinks);
+const thirdProjectStar = document.createElement("div");
+thirdProjectStar.innerHTML = "star";
+thirdProjectLinks.appendChild(thirdProjectStar);
+const thirdProjectEye = document.createElement("div");
+thirdProjectEye.innerHTML = "eye";
+thirdProjectLinks.appendChild(thirdProjectEye);
+const thirdProjectShare = document.createElement("div");
+thirdProjectShare.innerHTML = "share";
+thirdProjectLinks.appendChild(thirdProjectShare);
+
+const fourthProjectTitle = document.createElement("div");
+fourthProjectTitle.classList = "project-title";
+fourthProjectTitle.innerHTML = "Easy Peasy App";
+fourthProject.appendChild(fourthProjectTitle);
+const fourthProjectText = document.createElement("div");
+fourthProjectText.classList = "project-text";
+fourthProjectText.innerHTML =
+  "Repellat neque sunt nulla eius, commodi consequatur ipsum quaerat beatae optio nemo autem ea unde.";
+fourthProject.appendChild(fourthProjectText);
+const fourthProjectLinks = document.createElement("div");
+fourthProjectLinks.classList = "project-links";
+fourthProject.appendChild(fourthProjectLinks);
+const fourthProjectStar = document.createElement("div");
+fourthProjectStar.innerHTML = "star";
+fourthProjectLinks.appendChild(fourthProjectStar);
+const fourthProjectEye = document.createElement("div");
+fourthProjectEye.innerHTML = "eye";
+fourthProjectLinks.appendChild(fourthProjectEye);
+const fourthProjectShare = document.createElement("div");
+fourthProjectShare.innerHTML = "share";
+fourthProjectLinks.appendChild(fourthProjectShare);
+
+const fifthProjectTitle = document.createElement("div");
+fifthProjectTitle.classList = "project-title";
+fifthProjectTitle.innerHTML = "Ad Blocker";
+fifthProject.appendChild(fifthProjectTitle);
+const fifthProjectText = document.createElement("div");
+fifthProjectText.classList = "project-text";
+fifthProjectText.innerHTML =
+  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nisi rem minima expedita, facilis ex?";
+fifthProject.appendChild(fifthProjectText);
+const fifthProjectLinks = document.createElement("div");
+fifthProjectLinks.classList = "project-links";
+fifthProject.appendChild(fifthProjectLinks);
+const fifthProjectStar = document.createElement("div");
+fifthProjectStar.innerHTML = "star";
+fifthProjectLinks.appendChild(fifthProjectStar);
+const fifthProjectEye = document.createElement("div");
+fifthProjectEye.innerHTML = "eye";
+fifthProjectLinks.appendChild(fifthProjectEye);
+const fifthProjectShare = document.createElement("div");
+fifthProjectShare.innerHTML = "share";
+fifthProjectLinks.appendChild(fifthProjectShare);
+
+const sixthProjectTitle = document.createElement("div");
+sixthProjectTitle.classList = "project-title";
+sixthProjectTitle.innerHTML = "Money Maker";
+sixthProject.appendChild(sixthProjectTitle);
+const sixthProjectText = document.createElement("div");
+sixthProjectText.classList = "project-text";
+sixthProjectText.innerHTML =
+  "Repellat neque sunt nulla eius, commodi consequatur ipsum quaerat beatae optio nemo autem ea unde.";
+sixthProject.appendChild(sixthProjectText);
+const sixthProjectLinks = document.createElement("div");
+sixthProjectLinks.classList = "project-links";
+sixthProject.appendChild(sixthProjectLinks);
+const sixthProjectStar = document.createElement("div");
+sixthProjectStar.innerHTML = "star";
+sixthProjectLinks.appendChild(sixthProjectStar);
+const sixthProjectEye = document.createElement("div");
+sixthProjectEye.innerHTML = "eye";
+sixthProjectLinks.appendChild(sixthProjectEye);
+const sixthProjectShare = document.createElement("div");
+sixthProjectShare.innerHTML = "share";
+sixthProjectLinks.appendChild(sixthProjectShare);
