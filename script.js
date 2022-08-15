@@ -1,4 +1,126 @@
 ///////////////////////////////////////////////////////////////////////////
+/////////////////////// BUILD HEADER //////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+const headerContainer = document.getElementById("header-container");
+
+const headerTop = document.createElement("div");
+headerTop.classList = "header-top";
+headerContainer.appendChild(headerTop);
+
+const searchbar = document.createElement("div");
+searchbar.classList = "searchbar";
+headerTop.appendChild(searchbar);
+
+const searchIcon = document.createElement("div");
+searchIcon.classList = "search-icon";
+searchbar.appendChild(searchIcon);
+
+const searchField = document.createElement("div");
+searchField.classList = "search-field";
+searchbar.appendChild(searchField);
+
+const settings = document.createElement("div");
+settings.classList = "settings";
+headerTop.appendChild(settings);
+
+const notifications = document.createElement("div");
+notifications.classList = "notifications";
+settings.appendChild(notifications);
+
+const userThemes = document.createElement("div");
+userThemes.classList = "user-themes";
+settings.appendChild(userThemes);
+
+const userSettings = document.createElement("div");
+userSettings.classList = "user-settings";
+userSettings.id = "userGreet";
+userSettings.innerHTML = "@hankfontaine";
+settings.appendChild(userSettings);
+
+const headerMain = document.createElement("div");
+headerMain.classList = "header-main";
+headerContainer.appendChild(headerMain);
+
+const profilePic = document.createElement("div");
+profilePic.classList = "profile-pic";
+headerMain.appendChild(profilePic);
+
+const greeting = document.createElement("div");
+greeting.classList = "greeting";
+headerMain.appendChild(greeting);
+
+const salutations = document.createElement("div");
+salutations.classList = "salutations";
+salutations.innerHTML = "Salutations";
+greeting.appendChild(salutations);
+
+const userSettingsTwo = document.createElement("div");
+userSettingsTwo.classList = "user-settings";
+userSettingsTwo.id = "userGreetTwo";
+userSettingsTwo.innerHTML = "Hank @hankfontaine";
+greeting.appendChild(userSettingsTwo);
+
+const userCreateContent = document.createElement("div");
+userCreateContent.classList = "user-create-content";
+headerMain.appendChild(userCreateContent);
+
+const newButton = document.createElement("button");
+newButton.classList = "button-style";
+newButton.innerHTML = "New";
+userCreateContent.appendChild(newButton);
+
+const uploadButton = document.createElement("button");
+uploadButton.classList = "button-style";
+uploadButton.innerHTML = "New";
+userCreateContent.appendChild(uploadButton);
+
+const shareButton = document.createElement("button");
+shareButton.classList = "button-style";
+shareButton.innerHTML = "Share";
+userCreateContent.appendChild(shareButton);
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+///////////////////////////////////////////////////////////////////////////
 /////////////////BUILD PROJECTS CONTAINER /////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
