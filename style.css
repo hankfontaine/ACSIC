@@ -23,8 +23,9 @@ body {
   background-color: #0284c7;
   border-radius: 90px;
   border: none;
-  width: 70px;
+  width: 80px;
   height: 2.5em;
+  margin-right: 3vw;
 }
 
 .sidebar-button {
@@ -48,7 +49,7 @@ body {
     "sidebar main main main";
 }
 
-.header {
+#header-container {
   background-color: rgba(245, 245, 245, 0.861);
   grid-area: header;
   display: grid;
@@ -148,9 +149,8 @@ body {
   height: 4.5vh;
   width: 4.5vh;
   border-radius: 90px;
-
   grid-area: profile-pic;
-  margin: 0 0 0 5vw;
+  margin: 0 2vw 0 5vw;
 }
 
 .greeting {
@@ -166,7 +166,7 @@ body {
   font-size: 3vh;
 }
 
-.user-create-content {
+#user-create-content {
   width: 20vw;
   margin-left: 30vw;
   display: flex;
@@ -174,7 +174,7 @@ body {
   grid-area: user-create-content;
 }
 
-.sidebar {
+#sidebar {
   color: white;
   background-color: #0284c7;
   grid-area: sidebar;
@@ -192,19 +192,20 @@ body {
   margin-bottom: 10vh;
 }
 
-.logo-image {
+#logo-image {
+  height: 50px;
   margin: 0 0 0 5vw;
   grid-area: logo-image;
 }
 
-.brand-logo-text {
+#brand-logo-text {
   margin-top: 1.5vh;
   font-weight: 550;
   font-size: 3.3vh;
   grid-area: brand-logo-text;
 }
 
-.nav-links,
+#nav-links,
 .general-settings {
   width: 200px;
   display: grid;
@@ -212,13 +213,13 @@ body {
   margin-bottom: 5vh;
 }
 
-.nav-links {
+#nav-links {
   grid-area: nav-links;
   display: grid;
   grid-template-columns: 1;
 }
 
-.general-settings {
+#general-settings {
   grid-area: general-settings;
 }
 
@@ -235,7 +236,7 @@ body {
   min-height: 80vh;
 }
 
-.projects-container {
+#projects-container {
   grid-area: user-projects;
   padding-left: 10px;
 }
@@ -271,7 +272,7 @@ body {
   margin: 1em;
 }
 
-.announcements-container {
+#announcements-container {
   grid-area: announcements;
   margin-left: 2vw;
 }
@@ -293,7 +294,7 @@ body {
   font-size: medium;
 }
 
-.trending-container {
+#trending-container {
   grid-area: trending;
   box-sizing: border-box;
   margin-left: 2vw;

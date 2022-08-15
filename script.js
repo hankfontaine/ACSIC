@@ -62,7 +62,7 @@ userSettingsTwo.innerHTML = "Hank @hankfontaine";
 greeting.appendChild(userSettingsTwo);
 
 const userCreateContent = document.createElement("div");
-userCreateContent.classList = "user-create-content";
+userCreateContent.id = "user-create-content";
 headerMain.appendChild(userCreateContent);
 
 const newButton = document.createElement("button");
@@ -72,13 +72,96 @@ userCreateContent.appendChild(newButton);
 
 const uploadButton = document.createElement("button");
 uploadButton.classList = "button-style";
-uploadButton.innerHTML = "New";
+uploadButton.innerHTML = "Upload";
 userCreateContent.appendChild(uploadButton);
 
 const shareButton = document.createElement("button");
 shareButton.classList = "button-style";
 shareButton.innerHTML = "Share";
 userCreateContent.appendChild(shareButton);
+
+///////////////////////////////////////////////////////////////////////////
+////////////////////// BUILD SIDEBAR //////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+const sidebar = document.getElementById("sidebar");
+
+const brandLogo = document.createElement("div");
+brandLogo.classList = "brand-logo";
+sidebar.appendChild(brandLogo);
+
+const logoImage = document.createElement("img");
+logoImage.src = "SVGs-and-Images/spiral.png";
+logoImage.alt = "the brand logo";
+logoImage.id = "logo-image";
+brandLogo.appendChild(logoImage);
+
+const brandLogoText = document.createElement("div");
+brandLogoText.id = "brand-logo-text";
+brandLogoText.innerHTML = "Dashboard";
+brandLogo.appendChild(brandLogoText);
+
+const navLinks = document.createElement("div");
+navLinks.id = "nav-links";
+sidebar.appendChild(navLinks);
+
+const sidebarHome = document.createElement("button");
+sidebarHome.classList = "sidebar-button";
+sidebarHome.id = "sidebar-home";
+sidebarHome.innerHTML = "Home";
+navLinks.appendChild(sidebarHome);
+
+const sidebarProfile = document.createElement("button");
+sidebarProfile.classList = "sidebar-button";
+sidebarProfile.id = "sidebar-profile";
+sidebarProfile.innerHTML = "Profile";
+navLinks.appendChild(sidebarProfile);
+
+const sidebarMessages = document.createElement("button");
+sidebarMessages.classList = "sidebar-button";
+sidebarMessages.id = "sidebar-messages";
+sidebarMessages.innerHTML = "Messages";
+navLinks.appendChild(sidebarMessages);
+
+const sidebarHistory = document.createElement("button");
+sidebarHistory.classList = "sidebar-button";
+sidebarHistory.id = "sidebar-History";
+sidebarHistory.innerHTML = "History";
+navLinks.appendChild(sidebarHistory);
+
+const sidebarTasks = document.createElement("button");
+sidebarTasks.classList = "sidebar-button";
+sidebarTasks.id = "sidebar-tasks";
+sidebarTasks.innerHTML = "Tasks";
+navLinks.appendChild(sidebarTasks);
+
+const sidebarCommunities = document.createElement("button");
+sidebarCommunities.classList = "sidebar-button";
+sidebarCommunities.id = "sidebar-commuities";
+sidebarCommunities.innerHTML = "Communities";
+navLinks.appendChild(sidebarCommunities);
+
+const generalSettings = document.createElement("div");
+generalSettings.id = "general-settings";
+sidebar.appendChild(generalSettings);
+
+const sidebarSettings = document.createElement("button");
+sidebarSettings.classList = "sidebar-button";
+sidebarSettings.id = "sidebar-settings";
+sidebarSettings.innerHTML = "Settings";
+generalSettings.appendChild(sidebarSettings);
+
+const sidebarSupport = document.createElement("button");
+sidebarSupport.classList = "sidebar-button";
+sidebarSupport.id = "sidebar-support";
+sidebarSupport.innerHTML = "Support";
+generalSettings.appendChild(sidebarSupport);
+
+const sidebarPrivacy = document.createElement("button");
+sidebarPrivacy.classList = "sidebar-button";
+sidebarPrivacy.id = "sidebar-privacy";
+sidebarPrivacy.innerHTML = "Privacy";
+generalSettings.appendChild(sidebarPrivacy);
 
 //
 //
