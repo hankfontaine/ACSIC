@@ -1,8 +1,12 @@
+const container = document.getElementById("container");
+
 ///////////////////////////////////////////////////////////////////////////
 /////////////////////// BUILD HEADER //////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-const headerContainer = document.getElementById("header-container");
+const headerContainer = document.createElement("div");
+headerContainer.id = "header-container";
+container.appendChild(headerContainer);
 
 const headerTop = document.createElement("div");
 headerTop.classList = "header-top";
@@ -84,7 +88,9 @@ userCreateContent.appendChild(shareButton);
 ////////////////////// BUILD SIDEBAR //////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-const sidebar = document.getElementById("sidebar");
+const sidebar = document.createElement("div");
+sidebar.id = "sidebar";
+container.appendChild(sidebar);
 
 const brandLogo = document.createElement("div");
 brandLogo.classList = "brand-logo";
@@ -163,51 +169,17 @@ sidebarPrivacy.id = "sidebar-privacy";
 sidebarPrivacy.innerHTML = "Privacy";
 generalSettings.appendChild(sidebarPrivacy);
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 ///////////////////////////////////////////////////////////////////////////
 /////////////////BUILD PROJECTS CONTAINER /////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-const projectsContainer = document.getElementById("projects-container");
+const main = document.createElement("div");
+main.classList = "main";
+container.appendChild(main);
+
+const projectsContainer = document.createElement("div");
+projectsContainer.id = "projects-container";
+main.appendChild(projectsContainer);
 
 const userProjectsTitle = document.createElement("h4");
 userProjectsTitle.innerHTML = "User Projects";
@@ -378,9 +350,10 @@ sixthProjectLinks.appendChild(sixthProjectShare);
 ///////////////BUILD ANNOUNCNEMENTS CONTAINER /////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-const announcementsContainer = document.getElementById(
-  "announcements-container"
-);
+const announcementsContainer = document.createElement("div");
+announcementsContainer.id = "announcements-container";
+container.appendChild(announcementsContainer);
+
 const announcementsTitle = document.createElement("h4");
 announcementsTitle.innerHTML = "Announcements";
 announcementsContainer.appendChild(announcementsTitle);
@@ -406,3 +379,123 @@ privacyPolicyDiv.id = "updated-privacy-policy";
 privacyPolicyDiv.classList = "announcements-cell";
 privacyPolicyDiv.innerHTML = "Updated Privacy Policy";
 announcementsBox.appendChild(privacyPolicyDiv);
+
+///////////////////////////////////////////////////////////////////////////
+///////////////BUILD TRENDING CONTAINER ///////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+const trendingContainer = document.createElement("div");
+trendingContainer.id = "trending-container";
+container.appendChild(trendingContainer);
+
+const trendingTitle = document.createElement("h4");
+trendingTitle.innerHTML = "Trending";
+trendingContainer.appendChild(trendingTitle);
+
+const trendingBox = document.createElement("div");
+trendingBox.classList = "trending";
+trendingContainer.appendChild(trendingBox);
+
+/////////////// TRENDING CELL ONE /////////////////////////////////////////
+
+const trendingCellOne = document.createElement("div");
+trendingCellOne.id = "trending-one";
+trendingCellOne.classList = "trending-cell";
+trendingBox.appendChild(trendingCellOne);
+
+const trendingCellOnePic = document.createElement("div");
+trendingCellOnePic.classList = "trending-pic";
+trendingCellOnePic.innerHTML = "PicOne";
+trendingCellOne.appendChild(trendingCellOnePic);
+
+const trendingCellOneInfo = document.createElement("div");
+trendingCellOneInfo.classList = "trending-user-info";
+trendingCellOne.appendChild(trendingCellOneInfo);
+
+const trendingCellOneUserName = document.createElement("div");
+trendingCellOneUserName.classList = "trending-username";
+trendingCellOneUserName.innerHTML = "@What";
+trendingCellOne.appendChild(trendingCellOneUserName);
+
+const trendingCellOneUserBio = document.createElement("div");
+trendingCellOneUserBio.classList = "trending-userbio";
+trendingCellOneUserBio.innerHTML = "@Bio";
+trendingCellOne.appendChild(trendingCellOneUserBio);
+
+/////////////// TRENDING CELL TWO /////////////////////////////////////////
+
+const trendingCellTwo = document.createElement("div");
+trendingCellTwo.id = "trending-two";
+trendingCellTwo.classList = "trending-cell";
+trendingBox.appendChild(trendingCellTwo);
+
+const trendingCellTwoPic = document.createElement("div");
+trendingCellTwoPic.classList = "trending-pic";
+trendingCellTwoPic.innerHTML = "PicTwo";
+trendingCellTwo.appendChild(trendingCellTwoPic);
+
+const trendingCellTwoInfo = document.createElement("div");
+trendingCellTwoInfo.classList = "trending-user-info";
+trendingCellTwo.appendChild(trendingCellTwoInfo);
+
+const trendingCellTwoUserName = document.createElement("div");
+trendingCellTwoUserName.classList = "trending-username";
+trendingCellTwoUserName.innerHTML = "@What";
+trendingCellTwo.appendChild(trendingCellTwoUserName);
+
+const trendingCellTwoUserBio = document.createElement("div");
+trendingCellTwoUserBio.classList = "trending-userbio";
+trendingCellTwoUserBio.innerHTML = "@Bio";
+trendingCellTwo.appendChild(trendingCellTwoUserBio);
+
+/////////////// TRENDING CELL THREE /////////////////////////////////////////
+
+const trendingCellThree = document.createElement("div");
+trendingCellThree.id = "trending-three";
+trendingCellThree.classList = "trending-cell";
+trendingBox.appendChild(trendingCellThree);
+
+const trendingCellThreePic = document.createElement("div");
+trendingCellThreePic.classList = "trending-pic";
+trendingCellThreePic.innerHTML = "PicThree";
+trendingCellThree.appendChild(trendingCellThreePic);
+
+const trendingCellThreeInfo = document.createElement("div");
+trendingCellThreeInfo.classList = "trending-user-info";
+trendingCellThree.appendChild(trendingCellThreeInfo);
+
+const trendingCellThreeUserName = document.createElement("div");
+trendingCellThreeUserName.classList = "trending-username";
+trendingCellThreeUserName.innerHTML = "@What";
+trendingCellThree.appendChild(trendingCellThreeUserName);
+
+const trendingCellThreeUserBio = document.createElement("div");
+trendingCellThreeUserBio.classList = "trending-userbio";
+trendingCellThreeUserBio.innerHTML = "@Bio";
+trendingCellThree.appendChild(trendingCellThreeUserBio);
+
+/////////////// TRENDING CELL FOUR /////////////////////////////////////////
+
+const trendingCellFour = document.createElement("div");
+trendingCellFour.id = "trending-four";
+trendingCellFour.classList = "trending-cell";
+trendingBox.appendChild(trendingCellFour);
+
+const trendingCellFourPic = document.createElement("div");
+trendingCellFourPic.classList = "trending-pic";
+trendingCellFourPic.innerHTML = "PicFour";
+trendingCellFour.appendChild(trendingCellFourPic);
+
+const trendingCellFourInfo = document.createElement("div");
+trendingCellFourInfo.classList = "trending-user-info";
+trendingCellFour.appendChild(trendingCellFourInfo);
+
+const trendingCellFourUserName = document.createElement("div");
+trendingCellFourUserName.classList = "trending-username";
+trendingCellFourUserName.innerHTML = "@What";
+trendingCellFour.appendChild(trendingCellFourUserName);
+
+const trendingCellFourUserBio = document.createElement("div");
+trendingCellFourUserBio.classList = "trending-userbio";
+trendingCellFourUserBio.innerHTML = "@Bio";
+trendingCellFour.appendChild(trendingCellFourUserBio);

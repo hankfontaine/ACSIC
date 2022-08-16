@@ -40,7 +40,7 @@ body {
   margin: 1vh 0 0 5vw;
 }
 
-.container {
+#container {
   display: grid;
   grid-template-areas:
     "sidebar header header header"
