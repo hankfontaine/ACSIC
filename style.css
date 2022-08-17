@@ -1,46 +1,14 @@
+/* GLOBAL LAYOUT CSS  */
 body {
   background-color: #bfdbfe;
-  height: 100vh;
-  width: 100vw;
-  /* font-size: large; */
   margin-top: 0;
   margin-left: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.button {
-  font-size: large;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 1px 1px #93c8c4;
-  min-width: 100px;
-  min-height: 20px;
-}
-
-.button-style {
-  color: white;
-  background-color: #0284c7;
-  border-radius: 90px;
-  border: none;
-  width: 80px;
-  height: 2.5em;
-  margin-right: 3vw;
-}
-
-.sidebar-button {
-  text-align: left;
-  color: white;
-  background-color: #0284c7;
-  border: none;
-  font-size: large;
-  font-weight: bold;
-  min-width: 100px;
-  min-height: 20px;
-  margin: 1vh 0 0 5vw;
-}
-
 #container {
+  width: 100vw;
   display: grid;
   grid-template-areas:
     "sidebar header header header"
@@ -48,6 +16,8 @@ body {
     "sidebar main main main"
     "sidebar main main main";
 }
+
+/* STYLE FOR HEADER */
 
 #header-container {
   background-color: rgba(245, 245, 245, 0.861);
@@ -61,12 +31,22 @@ body {
   box-shadow: 0px 1px 5px rgb(166, 165, 165);
 }
 
+.header-buttons {
+  color: white;
+  background-color: #0284c7;
+  border-radius: 90px;
+  border: none;
+  width: 90px;
+  height: 2.5em;
+  margin-right: 1vw;
+}
+
 .header-top {
   padding-top: 4vh;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-right: 5vw;
+  margin-right: 3vw;
 }
 
 .searchbar {
@@ -125,14 +105,6 @@ body {
 }
 
 #userGreet {
-  background: none;
-  background-color: inherit;
-  color: inherit;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  border: none;
   font-size: 3vh;
 }
 
@@ -143,7 +115,6 @@ body {
 }
 
 .profile-pic {
-  background: none;
   background-image: url(./SVGs-and-Images/profile-pic-small-copy.jpg);
   background-size: cover;
   height: 4.5vh;
@@ -155,7 +126,6 @@ body {
 
 .greeting {
   grid-area: greeting;
-  width: 20vw;
 }
 
 .saluations {
@@ -174,6 +144,8 @@ body {
   grid-area: user-create-content;
 }
 
+/* STYLE FOR SIDEBAR */
+
 #sidebar {
   color: white;
   background-color: #0284c7;
@@ -183,9 +155,19 @@ body {
   min-width: 250px;
 }
 
-.brand-logo {
-  /* font-size: 2.5vh; */
+.sidebar-buttons {
+  display: flex;
+  color: white;
+  background-color: #0284c7;
+  border: none;
+  font-size: large;
   font-weight: bold;
+  min-width: 100px;
+  min-height: 20px;
+  margin: 1vh 0 0 5vw;
+}
+
+.brand-logo {
   grid-area: brand-logo;
   display: flex;
   margin-top: 3vh;
@@ -205,23 +187,16 @@ body {
   grid-area: brand-logo-text;
 }
 
-#nav-links,
-.general-settings {
-  width: 200px;
-  display: grid;
-  grid-template-columns: 1;
-  margin-bottom: 5vh;
-}
-
 #nav-links {
+  margin-bottom: 5vh;
   grid-area: nav-links;
-  display: grid;
-  grid-template-columns: 1;
 }
 
 #general-settings {
   grid-area: general-settings;
 }
+
+/* STYLE FOR MAIN BODY CONTENT */
 
 .main {
   margin-right: 3vw;
@@ -244,11 +219,11 @@ body {
 .user-projects {
   display: grid;
   gap: 15px;
-  height: 70vh;
+  height: 65vh;
   grid-template: repeat(3, 1fr) / auto auto;
 }
 
-.project {
+.project-example {
   padding: 10px;
   border-left: 4px solid goldenrod;
   width: 25vw;
@@ -309,7 +284,15 @@ body {
   padding: 10px;
 }
 
-.trending-cell {
-  background-color: white;
-  font-size: medium;
+/* section for getting SVGs */
+
+#sidebar-home-svg {
+  color: red;
+  background: none;
+  background-image: url(./SVGs-and-Images/home.svg);
+  background-size: cover;
+  height: 2vh;
+  width: 2vh;
+  grid-area: profile-pic;
+  margin: 0 2vw 0 5vw;
 }

@@ -70,17 +70,17 @@ userCreateContent.id = "user-create-content";
 headerMain.appendChild(userCreateContent);
 
 const newButton = document.createElement("button");
-newButton.classList = "button-style";
+newButton.classList = "header-buttons";
 newButton.innerHTML = "New";
 userCreateContent.appendChild(newButton);
 
 const uploadButton = document.createElement("button");
-uploadButton.classList = "button-style";
+uploadButton.classList = "header-buttons";
 uploadButton.innerHTML = "Upload";
 userCreateContent.appendChild(uploadButton);
 
 const shareButton = document.createElement("button");
-shareButton.classList = "button-style";
+shareButton.classList = "header-buttons";
 shareButton.innerHTML = "Share";
 userCreateContent.appendChild(shareButton);
 
@@ -111,38 +111,50 @@ const navLinks = document.createElement("div");
 navLinks.id = "nav-links";
 sidebar.appendChild(navLinks);
 
+////////////////////////////////////////////////////////////////////////
+//////////// SECTION FOR FILLING SIDEBAR INCL SVGS /////////////////////
+////////////////////////////////////////////////////////////////////////
+
 const sidebarHome = document.createElement("button");
-sidebarHome.classList = "sidebar-button";
+sidebarHome.classList = "sidebar-buttons";
 sidebarHome.id = "sidebar-home";
-sidebarHome.innerHTML = "Home";
+// sidebarHome.innerHTML = "Home";
 navLinks.appendChild(sidebarHome);
 
+// const sidebarHomeSvg = document.createElement("div");
+// sidebarHomeSvg.id = "sidebar-home-svg";
+// sidebarHome.appendChild(sidebarHomeSvg);
+
+const sidebarHomeText = document.createElement("div");
+sidebarHomeText.innerHTML = "Home";
+sidebarHome.appendChild(sidebarHomeText);
+
 const sidebarProfile = document.createElement("button");
-sidebarProfile.classList = "sidebar-button";
+sidebarProfile.classList = "sidebar-buttons";
 sidebarProfile.id = "sidebar-profile";
 sidebarProfile.innerHTML = "Profile";
 navLinks.appendChild(sidebarProfile);
 
 const sidebarMessages = document.createElement("button");
-sidebarMessages.classList = "sidebar-button";
+sidebarMessages.classList = "sidebar-buttons";
 sidebarMessages.id = "sidebar-messages";
 sidebarMessages.innerHTML = "Messages";
 navLinks.appendChild(sidebarMessages);
 
 const sidebarHistory = document.createElement("button");
-sidebarHistory.classList = "sidebar-button";
+sidebarHistory.classList = "sidebar-buttons";
 sidebarHistory.id = "sidebar-History";
 sidebarHistory.innerHTML = "History";
 navLinks.appendChild(sidebarHistory);
 
 const sidebarTasks = document.createElement("button");
-sidebarTasks.classList = "sidebar-button";
+sidebarTasks.classList = "sidebar-buttons";
 sidebarTasks.id = "sidebar-tasks";
 sidebarTasks.innerHTML = "Tasks";
 navLinks.appendChild(sidebarTasks);
 
 const sidebarCommunities = document.createElement("button");
-sidebarCommunities.classList = "sidebar-button";
+sidebarCommunities.classList = "sidebar-buttons";
 sidebarCommunities.id = "sidebar-commuities";
 sidebarCommunities.innerHTML = "Communities";
 navLinks.appendChild(sidebarCommunities);
@@ -152,19 +164,19 @@ generalSettings.id = "general-settings";
 sidebar.appendChild(generalSettings);
 
 const sidebarSettings = document.createElement("button");
-sidebarSettings.classList = "sidebar-button";
+sidebarSettings.classList = "sidebar-buttons";
 sidebarSettings.id = "sidebar-settings";
 sidebarSettings.innerHTML = "Settings";
 generalSettings.appendChild(sidebarSettings);
 
 const sidebarSupport = document.createElement("button");
-sidebarSupport.classList = "sidebar-button";
+sidebarSupport.classList = "sidebar-buttons";
 sidebarSupport.id = "sidebar-support";
 sidebarSupport.innerHTML = "Support";
 generalSettings.appendChild(sidebarSupport);
 
 const sidebarPrivacy = document.createElement("button");
-sidebarPrivacy.classList = "sidebar-button";
+sidebarPrivacy.classList = "sidebar-buttons";
 sidebarPrivacy.id = "sidebar-privacy";
 sidebarPrivacy.innerHTML = "Privacy";
 generalSettings.appendChild(sidebarPrivacy);
@@ -190,28 +202,22 @@ userProjects.classList = "user-projects";
 projectsContainer.appendChild(userProjects);
 
 const firstProject = document.createElement("div");
-firstProject.classList = "project";
-firstProject.id = "project-one";
+firstProject.classList = "project-example";
 userProjects.appendChild(firstProject);
 const secondProject = document.createElement("div");
-secondProject.classList = "project";
-secondProject.id = "project-two";
+secondProject.classList = "project-example";
 userProjects.appendChild(secondProject);
 const thirdProject = document.createElement("div");
-thirdProject.classList = "project";
-thirdProject.id = "project-three";
+thirdProject.classList = "project-example";
 userProjects.appendChild(thirdProject);
 const fourthProject = document.createElement("div");
-fourthProject.classList = "project";
-fourthProject.id = "project-four";
+fourthProject.classList = "project-example";
 userProjects.appendChild(fourthProject);
 const fifthProject = document.createElement("div");
-fifthProject.classList = "project";
-fifthProject.id = "project-five";
+fifthProject.classList = "project-example";
 userProjects.appendChild(fifthProject);
 const sixthProject = document.createElement("div");
-sixthProject.classList = "project";
-sixthProject.id = "project-six";
+sixthProject.classList = "project-example";
 userProjects.appendChild(sixthProject);
 
 const firstProjectTitle = document.createElement("div");
@@ -352,7 +358,7 @@ sixthProjectLinks.appendChild(sixthProjectShare);
 
 const announcementsContainer = document.createElement("div");
 announcementsContainer.id = "announcements-container";
-container.appendChild(announcementsContainer);
+main.appendChild(announcementsContainer);
 
 const announcementsTitle = document.createElement("h4");
 announcementsTitle.innerHTML = "Announcements";
@@ -363,19 +369,16 @@ announcementsBox.classList = "announcements";
 announcementsContainer.appendChild(announcementsBox);
 
 const maintenanceDiv = document.createElement("div");
-maintenanceDiv.id = "maintenance";
 maintenanceDiv.classList = "announcements-cell";
 maintenanceDiv.innerHTML = "Site Maintenance";
 announcementsBox.appendChild(maintenanceDiv);
 
 const communityDiv = document.createElement("div");
-communityDiv.id = "community-share-day";
 communityDiv.classList = "announcements-cell";
 communityDiv.innerHTML = "Community Share Day";
 announcementsBox.appendChild(communityDiv);
 
 const privacyPolicyDiv = document.createElement("div");
-privacyPolicyDiv.id = "updated-privacy-policy";
 privacyPolicyDiv.classList = "announcements-cell";
 privacyPolicyDiv.innerHTML = "Updated Privacy Policy";
 announcementsBox.appendChild(privacyPolicyDiv);
@@ -386,7 +389,7 @@ announcementsBox.appendChild(privacyPolicyDiv);
 
 const trendingContainer = document.createElement("div");
 trendingContainer.id = "trending-container";
-container.appendChild(trendingContainer);
+main.appendChild(trendingContainer);
 
 const trendingTitle = document.createElement("h4");
 trendingTitle.innerHTML = "Trending";
@@ -399,8 +402,6 @@ trendingContainer.appendChild(trendingBox);
 /////////////// TRENDING CELL ONE /////////////////////////////////////////
 
 const trendingCellOne = document.createElement("div");
-trendingCellOne.id = "trending-one";
-trendingCellOne.classList = "trending-cell";
 trendingBox.appendChild(trendingCellOne);
 
 const trendingCellOnePic = document.createElement("div");
@@ -425,8 +426,6 @@ trendingCellOne.appendChild(trendingCellOneUserBio);
 /////////////// TRENDING CELL TWO /////////////////////////////////////////
 
 const trendingCellTwo = document.createElement("div");
-trendingCellTwo.id = "trending-two";
-trendingCellTwo.classList = "trending-cell";
 trendingBox.appendChild(trendingCellTwo);
 
 const trendingCellTwoPic = document.createElement("div");
@@ -451,8 +450,6 @@ trendingCellTwo.appendChild(trendingCellTwoUserBio);
 /////////////// TRENDING CELL THREE /////////////////////////////////////////
 
 const trendingCellThree = document.createElement("div");
-trendingCellThree.id = "trending-three";
-trendingCellThree.classList = "trending-cell";
 trendingBox.appendChild(trendingCellThree);
 
 const trendingCellThreePic = document.createElement("div");
@@ -477,8 +474,6 @@ trendingCellThree.appendChild(trendingCellThreeUserBio);
 /////////////// TRENDING CELL FOUR /////////////////////////////////////////
 
 const trendingCellFour = document.createElement("div");
-trendingCellFour.id = "trending-four";
-trendingCellFour.classList = "trending-cell";
 trendingBox.appendChild(trendingCellFour);
 
 const trendingCellFourPic = document.createElement("div");
